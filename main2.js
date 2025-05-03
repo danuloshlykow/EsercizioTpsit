@@ -1,3 +1,5 @@
-let a = 10;
+import PromptSync from "prompt-sync";
 
-console.logs(a)
+let prompt = PromptSync();
+
+let a = prompt("Prova");
