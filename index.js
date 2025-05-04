@@ -31,6 +31,25 @@ if(prova==false)
     console.log("attivita non esiste");
 }
 }
+function modific(name)
+{
+    let sc=false;
+    for(let a=0;a<attivita.length;a++)
+    {
+        if(name==attivita[a])
+            {   
+              attivita[a]=name;
+            }else{
+           sc=true;
+            }
+        
+    }
+    if(sc==true)
+        {
+            console.log("attivita non e stata trovata");
+        }
+
+}
 
 export {addAttivita,visualat,calcel};
 
