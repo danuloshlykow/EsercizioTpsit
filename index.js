@@ -31,14 +31,14 @@ if(prova==false)
     console.log("attivita non esiste");
 }
 }
-function modific(name)
+function modific(name,name1)
 {
     let sc=false;
     for(let a=0;a<attivita.length;a++)
     {
         if(name==attivita[a])
             {   
-              attivita[a]=name;
+              attivita[a]=name1;
             }else{
            sc=true;
             }
@@ -51,5 +51,5 @@ function modific(name)
 
 }
 
-export {addAttivita,visualat,calcel};
+export {addAttivita,visualat,calcel,modific};
 
