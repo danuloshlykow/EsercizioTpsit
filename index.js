@@ -1,10 +1,23 @@
 
 let attivita =[];
-
+/**
+ * Aggiunge una nuova attività alla lista delle attività.
+ * 
+ * @function
+ * @param {string} name - Il nome di attività da aggiungere.
+ * @returns {void}
+ */
 function addAttivita(name)
 {
 attivita.push(name);
 }
+/**
+ * Visualizza tutte le attività presenti nella lista.
+ * 
+ * @function
+ * @returns {void}
+ */
+
 function visualat()
 {
     for(let a=0;a<attivita.length;a++)
@@ -12,6 +25,15 @@ function visualat()
         console.log((a+1) +"." +attivita[a]);
     }
 }
+
+/**
+ * Elimina un'attività dalla lista.
+ * Se  attività non esiste, stampa un messaggio di errore.
+ * 
+ * @function
+ * @param {string} name - Il nome di attività da eliminare.
+ * @returns {void}
+ */
 function calcel(name)
 {
     let prova=true;
@@ -31,6 +53,15 @@ if(prova==false)
     console.log("attivita non esiste");
 }
 }
+/**
+ * Modifica un'attività esistente.
+ * Se l'attività non esiste, stampa un messaggio di errore.
+ * 
+ * @function
+ * @param {string} name - Il nome di attività da modificare.
+ * @param {string} name1 - Il nuovo nome di attività.
+ * @returns {void}
+ */
 function modific(name,name1)
 {
     let sc=false;
