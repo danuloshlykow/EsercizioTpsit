@@ -1,6 +1,6 @@
 import PromptSync from "prompt-sync";
 
-import { addAttivita,visualat,calcel } from './index.js';
+import { addAttivita,visualat,calcel,modific } from './index.js';
 let prompt = PromptSync();
 
 let a;
@@ -14,7 +14,7 @@ do {
     switch(a){
     
         case '0':{
-        let name =prompt("Ведите название активности = ");
+        let name =prompt("Scrivi il nome di attivita = ");
         addAttivita(name);
         break;
             }
@@ -24,6 +24,12 @@ do {
                   calcel(name12);
               break;
                 }
+                case '2':
+                    {
+                let name3=prompt("Scriviv nome dello sport che voui madificare = ");
+                let name4=prompt("scrivi la modifica = ");
+                modific(name3,name4);
+                    }
         case '3':
             {
         visualat();
